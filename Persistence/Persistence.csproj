@@ -54,6 +54,8 @@
       <DependentUpon>201912241905548_InitialMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Repositories\AuthorRepository.cs" />
+    <Compile Include="Repositories\CourseRepository.cs" />
     <Compile Include="Repositories\Repository.cs" />
     <Compile Include="RepositoryContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
