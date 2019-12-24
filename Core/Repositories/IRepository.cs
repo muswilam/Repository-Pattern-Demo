@@ -16,7 +16,6 @@ namespace Core.Repositories
         TEntity SingleOrDefault(Expression<Func<TEntity, bool>> predicate);
 
         // Insert
-        void Add(TEntity entity);
         void AddRange(IEnumerable<TEntity> entities);
 
         // Delete
