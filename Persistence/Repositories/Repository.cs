@@ -29,7 +29,7 @@ namespace Persistence.Repositories
             return _entities.ToList();
         }
 
-        public IEnumerable<TEntity> Find(System.Linq.Expressions.Expression<Func<TEntity, bool>> predicate)
+        public IEnumerable<TEntity> Where(System.Linq.Expressions.Expression<Func<TEntity, bool>> predicate)
         {
             return _entities.Where(predicate);
         }

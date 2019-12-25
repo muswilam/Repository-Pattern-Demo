@@ -24,9 +24,9 @@ namespace Persistence
         public ICourseRepository Courses { get; private set; } // Or using this way.
         public IAuthorRepository Authors { get { return new AuthorRepository(_context); } }
 
-        public int Complete()
+        public bool Complete()
         {
-            return _context.SaveChanges();
+            return _context.SaveChanges() > 0;
         }
 
         public void Dispose()

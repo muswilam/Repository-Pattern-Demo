@@ -1,0 +1,22 @@
+﻿@model  IEnumerable<Core.Domain.Course>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Repository Pattern</h1>
+</div>
+
+<div class="row">
+    <form method="post" action="@Url.Action("Add","Home")">
+        <button type="submit" class="btn btn-primary">Add Course</button>
+    </form>
+    <hr />
+    <ul>
+        @foreach (var course in Model)
+        {
+            <li>@course.Name</li>
+        }
+    </ul>
+</div>

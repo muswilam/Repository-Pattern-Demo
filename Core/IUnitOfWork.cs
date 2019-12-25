@@ -12,6 +12,6 @@ namespace Core
         // Act like DbSets
         ICourseRepository Courses { get; }
         IAuthorRepository Authors { get; }
-        int Complete();
+        bool Complete();
     }
 }
